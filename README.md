@@ -22,7 +22,8 @@ Currently, we are focused on contributing to:
 ### Hardware
 
 The Hardware division is focused on building original hardware projects in open
-source. Current efforts focus around RISC-V architectures.
+source. Current efforts focus around RISC-V architectures and building [a 
+simplified, pure-hardware fighting game](https://github.com/UTOSS/UTOSS_summer_2t4) for the DE1-SoC.
 
 ### Outreach
 
@@ -31,8 +32,8 @@ such as:
 
 1. The club website
 1. The club social media accounts
-   1. LinkedIn
-   1. Instagram
+   1. [LinkedIn](https://www.linkedin.com/company/utoss/)
+   1. [Instagram](https://www.instagram.com/ut_oss)
 1. This README
 
 All of these aspects are run and managed in an open source github-based manner.
