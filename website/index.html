@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Toronto Open Source Society</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --transition-speed: 0.5s;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+        }
+
+        body.scrolled {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background-color: var(--black);
+            z-index: 1000;
+            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+        }
+
+        header.scrolled {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity var(--transition-speed) ease;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        main {
+            padding-top: 60px;
+        }
+
+        #about {
+            padding: 7rem 0 0 0;
+        }
+        section {
+            padding: 1rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            position: relative; /* Added for positioning the divider */
+        }
+
+        body.scrolled section:not(:last-child)::after {
+            background-color: var(--black);
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .motto {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .division {
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            background-color: var(--black);
+            color: var(--white);
+            border: 2px solid var(--white);
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--white);
+            color: var(--black);
+            border-color: var(--black);
+        }
+
+        body.scrolled .cta-button {
+            background-color: var(--white);
+            color: var(--black);
+            border-color: var(--black);
+        }
+
+        body.scrolled .cta-button:hover {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+        }
+
+        body.scrolled footer {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        .social-links a {
+            color: inherit;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .motto {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://i.ibb.co/cwn2Zjr/Blackbg.png" alt="UTOSS Logo" class="logo">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#divisions">Divisions</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="https://i.ibb.co/9vvZRTY/Group-59.png" alt="UTOSS Hero Image" class="hero-image">
+            <h1>Welcome to UTOSS.</h1>
+            <p class="motto">Building the Open Future.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>UTOSS is UofT's first student club dedicated to Open Source. Our goal is to foster future open source leaders and let them thrive in the open source community.</p>
+        </section>
+
+        <section id="divisions">
+            <h2>Our Divisions</h2>
+            <div class="division">
+                <h3>Software</h3>
+                <p>Focused on making high impact sustained contributions to large software-based open source communities and projects.</p>
+            </div>
+            <div class="division">
+                <h3>Hardware</h3>
+                <p>Building original hardware projects in open source, with a focus on RISC-V architectures.</p>
+            </div>
+            <div class="division">
+                <h3>Outreach</h3>
+                <p>Responsible for all public facing aspects of the club, including our website and social media presence.</p>
+            </div>
+        </section>
+
+        <section id="join">
+            <h2>Join Us</h2>
+            There is no application, interviews. Everyone is welcome. Build your reputation within the community, then you will be voted to join.
+            <p>To become a official member, we <strong>suggest</strong> you:</p>
+            <ul>
+                <li>Show up in person to our weekly meetings</li>
+                <li>Make meaningful contributions in your chosen division</li>
+            </ul>
+            <br>
+            <a class="cta-button" onclick="window.open('https://forms.gle/yfAPb1RVTSqWPefv9', '_blank')">Join Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 University of Toronto Open Source Society</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/utoss/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/ut_oss" target="_blank">Instagram</a>
+            <a href="mailto:utoss.execs@gmail.com">Email</a>
+            <a href="https://github.com/UTOSS/community" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const header = document.querySelector('header');
+            const sections = document.querySelectorAll('section');
+            const hero = document.querySelector('#hero');
+
+            function checkScroll() {
+                const scrollPosition = window.scrollY;
+                const heroBottom = hero.offsetTop + hero.offsetHeight;
+
+                if (scrollPosition > heroBottom - 250) {
+                    body.classList.add('scrolled');
+                    header.classList.add('scrolled');
+                } else {
+                    body.classList.remove('scrolled');
+                    header.classList.remove('scrolled');
+                }
+            }
+
+            function checkSectionVisibility() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const sectionBottom = section.getBoundingClientRect().bottom;
+                    const windowHeight = window.innerHeight;
+
+                    if (sectionTop < windowHeight * 0.75 && sectionBottom > 0) {
+                        section.classList.add('visible');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', () => {
+                checkScroll();
+                checkSectionVisibility();
+            });
+
+            checkScroll();
+            checkSectionVisibility();
+        });
+    </script>
+</body>
+</html>
