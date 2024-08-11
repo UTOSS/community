@@ -42,8 +42,12 @@ All of these aspects are run and managed in an open source github-based manner.
 
 To join our club, we ask that you:
 
-1. Show up in person to our weekly meetings
-1. Make meaningful contributions in whichever division you are a contributor to
+1. Show up in person to our weekly meetings (at least 75% attendance)
+1. Make a meaningful contribution to a project we are working on
+
+Once you have completed these two tasks, you will become a member of the club.
+We ask that you continue to attend 75% of meetings as well as continue making contributions
+to our projects to remain a member.
 
 As our goal is to build open source leaders, we will give strong priority to
 members who are actively making and/or working towards contributions. If you
