@@ -24,8 +24,14 @@ Currently, we are focused on contributing to:
 ### Hardware
 
 The Hardware division is focused on building original hardware projects in open
-source. Current efforts focus around RISC-V architectures and building [a 
-simplified, pure-hardware fighting game](https://github.com/UTOSS/UTOSS_summer_2t4) for the DE1-SoC.
+source. The Hardware team currently has 4 main projects:
+
+1. A custom RV32I core
+2. A custom devboard team
+3. A miscellaneous peripherals and cores team
+4. A beginner-focused showpiece team.
+Our previous projects include building [a 
+simplified, pure-hardware fighting game](https://github.com/UTOSS/UTOSS_summer_2t4) for the DE1-SoC to show at clubs fair.
 
 ### Outreach
 
