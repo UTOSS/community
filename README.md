@@ -6,6 +6,8 @@ tomorrow, through student contributions today.
 
 This repo is the starting point for becoming a contributor to our club!
 
+Interested in learning more or joining us? Please fill out our [Interest Form][outreach-form].
+
 ## Divisions
 
 UTOSS has three distinct divisions: Software, Hardware, and Outreach.
@@ -49,7 +51,13 @@ Once you have completed these two tasks, you will become a member of the club.
 We ask that you continue to attend 75% of meetings as well as continue making contributions
 to our projects to remain a member.
 
+If you are interested in joining, please fill out our [Interest Form][outreach-form],
+so that we know you are interested and can plan accordingly! We look forward to
+working with you!
+
 As our goal is to build open source leaders, we will give strong priority to
 members who are actively making and/or working towards contributions. If you
 show up every week and work hard on your contributions, you will fit in and
 become a full member of the club in no time!
+
+[outreach-form]: https://docs.google.com/forms/d/e/1FAIpQLSeX02WEhJbI33dGQJponuacsJ9tV237N-5vM1TwKvAITYGb2Q/viewform
